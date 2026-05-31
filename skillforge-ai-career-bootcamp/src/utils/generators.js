@@ -1,0 +1,26 @@
+export function generateReadme(project) {
+  return `# ${project.title}\n\n## Problem\nProject này chứng minh năng lực ${project.focus.toLowerCase()} bằng demo có thể chạy được, có input/output, limitation và evidence rõ ràng.\n\n## User Story\nLà một người mới học AI Engineering, tôi muốn build project nhỏ nhưng đủ giải thích trong phỏng vấn để chứng minh rằng tôi hiểu workflow thật thay vì chỉ học lý thuyết.\n\n## Features\n- Offline-first, không cần backend/API trong MVP\n- Có dữ liệu mẫu local\n- Có logic xử lý rõ ràng\n- Có tiêu chí đánh giá\n- Có phần limitation và next steps\n\n## Tech Stack\n- Python hoặc React/Vite\n- Local data\n- Rule-based logic / keyword retrieval\n- GitHub README + evidence workflow\n\n## How to run\n\`\`\`bash\npython main.py\n\`\`\`\n\n## Evidence Checklist\n${project.evidence.map((item) => `- [ ] ${item}`).join('\n')}\n\n## Evaluation\n- Input test cases rõ ràng\n- Expected output/source nếu có\n- No-answer case cho câu hỏi ngoài phạm vi\n- Ghi lại lỗi và cách sửa\n\n## Limitations\n- Bản MVP mô phỏng offline, chưa dùng LLM API thật.\n- Retrieval đơn giản, chưa dùng embedding/vector database.\n- Chưa có backend, auth, monitoring hoặc cloud sync.\n\n## Production Upgrade Path\n- Thêm LLM API hoặc local model.\n- Thêm embedding/vector database.\n- Thêm backend + auth + audit log.\n- Thêm evaluation dashboard và monitoring.\n\n## Interview Defense\nTôi có thể giải thích project theo cấu trúc: Problem → Approach → Result → Limitation → Next step.\n`}
+
+export function generateCvLine(project) {
+  return `Built ${project.title}, an offline-first AI Engineering portfolio project focused on ${project.focus.toLowerCase()}, with runnable demo, evidence checklist, README, evaluation notes, limitations and interview-ready explanation.`
+}
+
+export function generateLinkedIn(project) {
+  return `Tôi vừa hoàn thành project ${project.title}. Project tập trung vào ${project.focus.toLowerCase()}. Điểm quan trọng nhất là không chỉ làm giao diện, mà có demo chạy được, evidence, README, limitation, evaluation và hướng nâng cấp để đưa vào portfolio ứng tuyển AI App Builder / LLM App Developer Intern.`
+}
+
+export function generateInterviewScript(project) {
+  return `Project ${project.title} giải quyết bài toán: ${project.focus}. Em thiết kế project theo hướng offline-first để hiểu rõ workflow trước khi dùng API thật. Luồng của project gồm input, xử lý, output, kiểm tra chất lượng và evidence. Kết quả là em có một demo có thể chạy được, có README, CV line và có thể giải thích limitation cũng như hướng nâng cấp lên production.`
+}
+
+export function generateCapstoneReport(runs = []) {
+  const total = runs.length
+  const avg = total ? Math.round(runs.reduce((sum, run) => sum + (run.report?.estimated || 0), 0) / total) : 0
+  return `# Capstone Evaluation Report\n\n## Project\nAI Career Capstone: Document Q&A Assistant\n\n## Test Summary\n- Total runs: ${total}\n- Average estimated score: ${avg}%\n\n## What was evaluated\n- Retrieval: hệ thống có tìm đúng tài liệu liên quan không.\n- Grounded answer: câu trả lời có bám vào nguồn không.\n- No-answer: nếu không đủ dữ liệu, hệ thống có tránh đoán bừa không.\n- Source citation: answer có hiển thị nguồn không.\n\n## Recent Runs\n${runs.slice(0, 10).map((run, index) => `### Run ${index + 1}\nQuestion: ${run.question}\nConfidence: ${run.confidence}\nScore: ${run.report?.estimated || 0}%\nSources: ${(run.docs || []).map((d) => d.source).join(', ') || 'No source'}\n`).join('\n')}\n\n## Limitations\n- Keyword retrieval còn đơn giản.\n- Chưa dùng embedding/vector database.\n- Chưa dùng LLM API thật.\n\n## Next Steps\n- Thêm embedding search.\n- Thêm expected answer comparison.\n- Thêm UI dashboard cho evaluation.\n- Thêm backend/auth nếu đưa cho người dùng thật.\n`}
+
+export function generatePortfolioPack(projects = [], progress = {}) {
+  const completed = projects.filter((project) => {
+    const proof = progress.projectProofs?.[project.id] || {}
+    return ['learn', 'lab', 'code', 'build', 'explain', 'portfolio'].every((step) => proof[step])
+  })
+  return `# SkillForge AI Portfolio Export Pack\n\n## Candidate Positioning\nTarget roles: AI Engineer Intern, Junior AI App Builder, AI Automation Assistant, LLM Application Developer Intern.\n\n## Completed Projects\n${completed.length ? completed.map((p) => `- ${p.title}: ${p.focus}`).join('\n') : '- Chưa có project nào đủ 6 proof steps.'}\n\n## CV Summary\nVietnamese beginner-focused AI Engineering portfolio built with SkillForge AI, an offline-first learning app, code missions, capstone Document Q&A Assistant, evidence system, evaluation workflow and interview defense preparation.\n\n## CV Bullets\n${projects.map((p) => `- ${generateCvLine(p)}`).join('\n')}\n\n## GitHub Checklist\n- [ ] README has problem, features, tech stack and how-to-run.\n- [ ] Screenshot/demo included.\n- [ ] Limitations are honest.\n- [ ] Next steps are realistic.\n- [ ] Code output or evaluation report included.\n\n## Interview Opening Script\nEm xây dựng SkillForge AI như một bootcamp offline trên mobile. App không hứa biến người mới thành senior engineer, mà tập trung vào lộ trình học thực tế: lessons, labs, code missions, capstone, evidence vault, portfolio export và interview defense.\n`}

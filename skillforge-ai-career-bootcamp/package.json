@@ -1,0 +1,41 @@
+{
+  "name": "skillforge-ai-career-bootcamp",
+  "version": "5.0.0",
+  "private": true,
+  "description": "Portfolio-ready offline AI Engineering career bootcamp app for Vietnamese beginners, with code missions, Evidence Vault, Capstone 2.0, portfolio export and interview defense.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "cap:add:android": "cap add android",
+    "cap:sync": "cap sync android",
+    "apk:debug": "cd android && ./gradlew assembleDebug"
+  },
+  "dependencies": {
+    "@capacitor/android": "8.0.0",
+    "@capacitor/cli": "8.3.4",
+    "@capacitor/core": "8.0.0",
+    "@vitejs/plugin-react": "6.0.2",
+    "autoprefixer": "10.4.20",
+    "postcss": "8.5.15",
+    "react": "19.2.6",
+    "react-dom": "19.2.6",
+    "tailwindcss": "3.4.19",
+    "vite": "8.0.14"
+  },
+  "keywords": [
+    "ai-engineering",
+    "bootcamp",
+    "career",
+    "portfolio",
+    "react",
+    "vite",
+    "tailwind",
+    "capacitor",
+    "offline-first",
+    "vietnamese"
+  ],
+  "author": "Vũ Hoàng",
+  "license": "MIT"
+}
