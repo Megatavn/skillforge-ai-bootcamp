@@ -3,7 +3,7 @@
 Recommended repository name:
 
 ```text
-skillforge-ai-career-bootcamp
+skillforge-ai-bootcamp
 ```
 
 Recommended repository description:
@@ -15,7 +15,7 @@ Offline-first AI Engineering career bootcamp app for Vietnamese beginners, featu
 ## 1. Prepare project
 
 ```bash
-cd skillforge-ai-career-bootcamp
+cd skillforge-ai-bootcamp
 npm ci
 npm run build
 ```
@@ -33,14 +33,14 @@ git commit -m "Initial SkillForge AI portfolio release"
 Create a new public repository named:
 
 ```text
-skillforge-ai-career-bootcamp
+skillforge-ai-bootcamp
 ```
 
 Then connect:
 
 ```bash
 git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/skillforge-ai-career-bootcamp.git
+git remote add origin https://github.com/YOUR_USERNAME/skillforge-ai-bootcamp.git
 git push -u origin main
 ```
 

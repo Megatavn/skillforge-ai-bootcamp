@@ -3,7 +3,7 @@
 **Portfolio-ready offline AI Engineering bootcamp app for Vietnamese beginners.**
 
 **Author:** Vũ Hoàng  
-**Repository name:** `skillforge-ai-career-bootcamp`  
+**Repository name:** `skillforge-ai-bootcamp`  
 **App name:** SkillForge AI  
 **Build target:** Web + Android APK via Capacitor  
 **Mode:** Offline-first, no backend, no login, no real AI API in MVP
@@ -131,8 +131,8 @@ Local documents
 ## 5. Run locally / Codespace
 
 ```bash
-unzip skillforge-ai-career-bootcamp.zip
-cd skillforge-ai-career-bootcamp
+unzip skillforge-ai-bootcamp.zip
+cd skillforge-ai-bootcamp
 npm ci
 npm run dev
 ```
@@ -228,7 +228,7 @@ Not suitable to claim yet:
 ## 12. Folder structure
 
 ```text
-skillforge-ai-career-bootcamp/
+skillforge-ai-bootcamp/
 ├── src/
 │   ├── App.jsx
 │   ├── data/curriculum.js
