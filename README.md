@@ -1,12 +1,32 @@
 # SkillForge AI: Career Bootcamp
 
+![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=black)
+![Vite](https://img.shields.io/badge/Vite-8-646CFF?logo=vite&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-3-38B2AC?logo=tailwindcss&logoColor=white)
+![Capacitor](https://img.shields.io/badge/Capacitor-Android-119EFF?logo=capacitor&logoColor=white)
+![Offline First](https://img.shields.io/badge/Mode-Offline--First-brightgreen)
+![License](https://img.shields.io/badge/License-MIT-yellow)
+
 **Portfolio-ready offline AI Engineering bootcamp app for Vietnamese beginners.**
 
 **Author:** Vũ Hoàng  
-**Repository name:** `skillforge-ai-bootcamp`  
+**Repository:** `skillforge-ai-bootcamp`  
 **App name:** SkillForge AI  
 **Build target:** Web + Android APK via Capacitor  
 **Mode:** Offline-first, no backend, no login, no real AI API in MVP
+
+---
+
+## Preview
+
+![SkillForge AI showcase](docs/screenshots/showcase.png)
+
+<p align="center">
+  <img src="docs/screenshots/01-code-missions-overview.jpg" width="180" alt="Code Missions screen" />
+  <img src="docs/screenshots/02-build-evidence-system.jpg" width="180" alt="Build Evidence screen" />
+  <img src="docs/screenshots/05-evidence-vault.jpg" width="180" alt="Evidence Vault screen" />
+  <img src="docs/screenshots/06-career-tracks.jpg" width="180" alt="Career Tracks screen" />
+</p>
 
 ---
 
@@ -128,16 +148,16 @@ Local documents
 
 ---
 
-## 5. Run locally / Codespace
+## 5. Run locally
 
 ```bash
-unzip skillforge-ai-bootcamp.zip
+git clone https://github.com/Megatavn/skillforge-ai-bootcamp.git
 cd skillforge-ai-bootcamp
 npm ci
 npm run dev
 ```
 
-Open the forwarded Vite URL in Codespace.
+Open the forwarded Vite URL in Codespace or your browser.
 
 ---
 
@@ -153,9 +173,9 @@ npm run build
 
 ```bash
 npm run build
-npm run cap:add:android
 npm run cap:sync
-npm run apk:debug
+cd android
+./gradlew assembleDebug
 ```
 
 APK output:
@@ -163,6 +183,8 @@ APK output:
 ```text
 android/app/build/outputs/apk/debug/app-debug.apk
 ```
+
+> Note: Capacitor Android builds may require a compatible JDK and Android SDK in Codespace/local machine.
 
 ---
 
@@ -178,57 +200,13 @@ python starter-kits/ai-automation-workflow/automation_workflow.py
 
 ---
 
-## 9. Suggested GitHub repository description
-
-```text
-Offline-first AI Engineering career bootcamp app for Vietnamese beginners, featuring code missions, Evidence Vault, Capstone 2.0, portfolio export and interview defense.
-```
-
----
-
-## 10. Suggested CV bullets
-
-```text
-Built SkillForge AI, an offline-first AI Engineering career bootcamp app for Vietnamese beginners, using React, Vite, Tailwind CSS, LocalStorage and Capacitor.
-```
-
-```text
-Designed a job-readiness learning system with 100+ micro-lessons, code missions, Evidence Vault, Capstone 2.0, portfolio export, career tracks and interview defense workflows.
-```
-
-```text
-Implemented runnable Python starter kits and an offline Document Q&A Assistant capstone that simulates RAG with local documents, keyword retrieval, source citation, no-answer behavior and evaluation reports.
-```
-
----
-
-## 11. Project positioning
-
-SkillForge AI is best positioned as:
-
-> A portfolio-ready offline AI Engineering bootcamp app that turns beginner learning into measurable project evidence.
-
-Suitable target roles after completing the bootcamp with real project evidence:
-
-- AI Engineer Intern
-- Junior AI App Builder
-- AI Automation Assistant
-- LLM Application Developer Intern
-- Junior AI Solutions Builder
-
-Not suitable to claim yet:
-
-- Senior AI Engineer
-- ML Researcher
-- Production ML Engineer chuyên sâu
-- Professional MLOps Engineer
-
----
-
-## 12. Folder structure
+## 9. Folder structure
 
 ```text
 skillforge-ai-bootcamp/
+├── .github/workflows/
+├── android/
+├── docs/screenshots/
 ├── src/
 │   ├── App.jsx
 │   ├── data/curriculum.js
@@ -250,6 +228,68 @@ skillforge-ai-bootcamp/
 
 ---
 
-## 13. License
+## 10. Suggested GitHub repository description
+
+```text
+Offline-first AI Engineering career bootcamp app for Vietnamese beginners, featuring code missions, Evidence Vault, Capstone 2.0, portfolio export and interview defense.
+```
+
+Suggested topics:
+
+```text
+ai-engineering, react, vite, tailwindcss, capacitor, android, offline-first, localstorage, education, portfolio, vietnamese, career-bootcamp, rag
+```
+
+---
+
+## 11. Suggested CV bullets
+
+```text
+Built SkillForge AI, an offline-first AI Engineering career bootcamp app for Vietnamese beginners, using React, Vite, Tailwind CSS, LocalStorage and Capacitor.
+```
+
+```text
+Designed a job-readiness learning system with micro-lessons, code missions, Evidence Vault, Capstone 2.0, portfolio export, career tracks and interview defense workflows.
+```
+
+```text
+Implemented runnable Python starter kits and an offline Document Q&A Assistant capstone that simulates RAG with local documents, keyword retrieval, source citation, no-answer behavior and evaluation reports.
+```
+
+---
+
+## 12. What I learned
+
+- Designed an offline-first learning product for beginner AI Engineering learners.
+- Built a structured career-readiness system with lessons, code missions, evidence tracking and capstone evaluation.
+- Implemented local persistence with LocalStorage.
+- Packaged a React/Vite web app into Android APK using Capacitor.
+- Created Python starter kits to connect learning content with hands-on project evidence.
+
+---
+
+## 13. Limitations
+
+This MVP is intentionally offline-first:
+
+- No real AI API in the MVP.
+- No backend, login or cloud sync.
+- Capstone simulates RAG with keyword retrieval rather than embeddings/vector database.
+- Production ML/MLOps concepts are represented as curriculum and learning labs, not full production infrastructure.
+
+---
+
+## 14. Roadmap
+
+- [ ] Add optional AI tutor mode with user-provided API key
+- [ ] Add embedding-based RAG mode
+- [ ] Add GitHub Pages / Netlify live demo
+- [ ] Add more demo video/GIF previews
+- [ ] Add project submission review workflow
+- [ ] Add optional cloud sync and account system
+
+---
+
+## 15. License
 
 MIT License.

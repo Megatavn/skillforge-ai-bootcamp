@@ -1,6 +1,6 @@
 {
-  "name": "skillforge-ai-career-bootcamp",
-  "version": "5.0.0",
+  "name": "skillforge-ai-bootcamp",
+  "version": "5.1.0",
   "private": true,
   "description": "Portfolio-ready offline AI Engineering career bootcamp app for Vietnamese beginners, with code missions, Evidence Vault, Capstone 2.0, portfolio export and interview defense.",
   "type": "module",

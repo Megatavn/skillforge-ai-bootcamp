@@ -1,10 +1,14 @@
 # Screenshots
 
-Add app screenshots here before publishing the repository. Recommended screens:
+Portfolio screenshots used in the main README.
 
-1. Home / Command Center
-2. Learn tab
-3. Code Mission tab
-4. Evidence Vault
-5. Capstone 2.0
-6. Career / Portfolio Export
+| File | Screen |
+|---|---|
+| `showcase.png` | GitHub README visual preview |
+| `01-code-missions-overview.jpg` | Code Missions overview |
+| `02-build-evidence-system.jpg` | Project Evidence System |
+| `03-code-starter-kit.jpg` | Starter kit detail |
+| `04-project-proof-flow.jpg` | Build proof flow |
+| `05-evidence-vault.jpg` | Evidence Vault |
+| `06-career-tracks.jpg` | Career Tracks |
+| `07-job-readiness-score.jpg` | Job Readiness Score |

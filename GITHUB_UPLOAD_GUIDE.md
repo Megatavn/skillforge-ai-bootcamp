@@ -12,56 +12,77 @@ Recommended repository description:
 Offline-first AI Engineering career bootcamp app for Vietnamese beginners, featuring code missions, Evidence Vault, Capstone 2.0, portfolio export and interview defense.
 ```
 
-## 1. Prepare project
+## 1. Run and build locally
 
 ```bash
+git clone https://github.com/Megatavn/skillforge-ai-bootcamp.git
 cd skillforge-ai-bootcamp
 npm ci
 npm run build
+npm run dev
 ```
 
-## 2. Initialize Git
+## 2. Commit updates
 
 ```bash
-git init
-git add .
-git commit -m "Initial SkillForge AI portfolio release"
+git add -A
+git commit -m "docs: polish GitHub portfolio presentation"
+git push origin main
 ```
 
-## 3. Create GitHub repo
-
-Create a new public repository named:
-
-```text
-skillforge-ai-bootcamp
-```
-
-Then connect:
-
-```bash
-git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/skillforge-ai-bootcamp.git
-git push -u origin main
-```
-
-## 4. GitHub topics
+## 3. GitHub topics
 
 Suggested topics:
 
 ```text
-ai-engineering, career, bootcamp, react, vite, tailwindcss, capacitor, offline-first, localstorage, portfolio, vietnamese, rag, education
+ai-engineering, react, vite, tailwindcss, capacitor, android, offline-first, localstorage, education, portfolio, vietnamese, career-bootcamp, rag
 ```
 
-## 5. Screenshots to add
+## 4. Screenshots
 
-Add screenshots to a `docs/screenshots/` folder:
+Screenshots are stored in:
 
-- Home / Command Center
-- Learn tab
-- Code Mission tab
+```text
+docs/screenshots/
+```
+
+Recommended README screenshots:
+
+- Code Missions
+- Project Evidence System
+- Evidence Vault
+- Career Tracks
+- Job Readiness Score
+
+## 5. GitHub Release for APK
+
+Create a release when you have an APK:
+
+```text
+Tag: v1.0.0
+Title: SkillForge AI v1.0.0 - Offline Bootcamp APK
+```
+
+Attach:
+
+```text
+skillforge-ai-debug.apk
+```
+
+Suggested release notes:
+
+```md
+First public portfolio release of SkillForge AI.
+
+Includes:
+- Offline-first AI Engineering bootcamp app
+- Code missions
 - Evidence Vault
 - Capstone 2.0
-- Career / Portfolio Export
+- Career tracks
+- Portfolio export workflow
+- Android APK build via Capacitor
+```
 
 ## 6. Pin this project
 
