@@ -7,9 +7,10 @@
 ![Offline First](https://img.shields.io/badge/Mode-Offline--First-brightgreen)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 
-**Portfolio-ready offline AI Engineering bootcamp app for Vietnamese beginners.**
+**Portfolio-ready offline AI Engineering bootcamp app for Vietnamese beginners.**  
+**Ứng dụng bootcamp AI Engineering chạy offline, dành cho người Việt mới bắt đầu, có bài học, bài tập code, bằng chứng năng lực và capstone để đưa lên GitHub/CV.**
 
-**Author:** Vũ Hoàng  
+**Author / Tác giả:** Vũ Hoàng  
 **Repository:** `skillforge-ai-bootcamp`  
 **App name:** SkillForge AI  
 **Build target:** Web + Android APK via Capacitor  
@@ -17,7 +18,7 @@
 
 ---
 
-## Preview
+## Preview / Ảnh demo
 
 ![SkillForge AI showcase](docs/screenshots/showcase.png)
 
@@ -27,6 +28,26 @@
   <img src="docs/screenshots/05-evidence-vault.jpg" width="180" alt="Evidence Vault screen" />
   <img src="docs/screenshots/06-career-tracks.jpg" width="180" alt="Career Tracks screen" />
 </p>
+
+---
+
+## 🇻🇳 Giới thiệu nhanh bằng tiếng Việt
+
+**SkillForge AI** là một ứng dụng học nghề AI Engineering theo kiểu bootcamp offline. App không chỉ cho người học đọc bài và làm quiz, mà dẫn họ đi qua một vòng học nghiêm túc hơn:
+
+```text
+Học → Lab → Bài tập Code → Làm Project → Lưu bằng chứng → Giải thích → Xuất Portfolio
+```
+
+Mục tiêu của app là giúp người mới có nền tảng và bằng chứng thực hành để chuẩn bị ứng tuyển các vị trí entry-level như:
+
+- AI Engineer Intern
+- Junior AI App Builder
+- AI Automation Assistant
+- LLM Application Developer Intern
+- Junior AI Solutions Builder
+
+App **không hứa** rằng người mới chỉ đọc vài bài là trở thành Senior AI Engineer. Thay vào đó, app tập trung vào cách học thật hơn: hiểu kiến thức, làm bài tập code, lưu evidence, hoàn thành capstone và biết trình bày project trên GitHub/CV.
 
 ---
 
@@ -52,46 +73,58 @@ It does **not** claim that a beginner becomes a Senior AI Engineer by only readi
 
 ---
 
-## Language Strategy
+## 🇻🇳 Chiến lược ngôn ngữ
 
-SkillForge AI uses a two-layer language strategy:
+SkillForge AI dùng chiến lược song ngữ rõ ràng:
 
-- **In-app experience:** Vietnamese-first UI for beginner learners, with important AI career terms kept bilingual where useful, such as RAG, Evidence Vault, Capstone and Code Missions.
-- **GitHub/CV presentation:** English-first documentation so the project looks professional in a portfolio and can be understood by recruiters or technical reviewers.
+| Khu vực | Ngôn ngữ |
+|---|---|
+| Giao diện app | Tiếng Việt-first, dễ hiểu cho người mới |
+| Thuật ngữ nghề | Song ngữ Việt - Anh khi cần, ví dụ: Code Mission, Evidence Vault, Capstone, RAG |
+| GitHub README | Song ngữ, có tiếng Anh để đẹp portfolio và có tiếng Việt để đúng người dùng mục tiêu |
+| CV / mô tả project | Ưu tiên tiếng Anh chuyên nghiệp |
+| Code / starter kits | Ưu tiên tiếng Anh để đúng chuẩn kỹ thuật |
 
-This keeps the product accessible for Vietnamese beginners while keeping the repository portfolio-ready.
-
----
-
-## 2. Why this project is portfolio-worthy
-
-Most beginner AI apps stop at lessons and quizzes. SkillForge AI focuses on proof of skill:
-
-- runnable Python code missions
-- project evidence collection
-- GitHub-ready README generation
-- CV bullet generation
-- interview defense prompts
-- capstone evaluation reports
-- realistic career positioning
-
-This makes the project suitable for GitHub portfolio and CV because it demonstrates product thinking, learning-system design, mobile-first UI/UX, offline-first architecture and practical AI Engineering curriculum design.
+Cách này giúp app dễ tiếp cận với người Việt mới bắt đầu, nhưng repo vẫn đủ chuyên nghiệp khi đưa vào GitHub portfolio hoặc CV.
 
 ---
 
-## 3. Core Features
+## 2. Vì sao project này đáng đưa vào portfolio?
 
-### Career Bootcamp System
+Hầu hết app học AI cho người mới chỉ dừng ở bài học và quiz. SkillForge AI tập trung vào **bằng chứng năng lực**:
 
-- 100+ micro-lessons
-- 12-week sprint roadmap
-- placement test
-- 4 career tracks
-- skill tree
-- spaced repetition
-- weekly sprint review
+- Có bài tập code thật bằng Python
+- Có starter kits để người học chạy được trong terminal
+- Có Evidence Vault để lưu repo, README, screenshot, terminal output, CV bullet và câu trả lời phỏng vấn
+- Có Capstone 2.0 mô phỏng Document Q&A / RAG offline
+- Có workflow xuất portfolio để đưa lên GitHub/CV
+- Có lộ trình học nghề rõ ràng, không hứa quá mức
 
-### Code Missions
+Project này thể hiện các năng lực quan trọng:
+
+- Product thinking
+- Mobile-first UI/UX
+- Offline-first architecture
+- React/Vite/Tailwind implementation
+- Capacitor Android packaging
+- Curriculum design for AI Engineering beginners
+- Career-readiness and portfolio workflow design
+
+---
+
+## 3. Core Features / Tính năng chính
+
+### Career Bootcamp System / Hệ thống bootcamp nghề nghiệp
+
+- 100+ micro-lessons / hơn 100 bài học ngắn
+- 12-week sprint roadmap / lộ trình 12 tuần
+- Placement test / kiểm tra đầu vào
+- 4 career tracks / 4 hướng ứng tuyển
+- Skill tree / cây kỹ năng
+- Spaced repetition / ôn tập lặp lại
+- Weekly sprint review / review theo tuần
+
+### Code Missions / Bài tập code
 
 The app includes runnable starter kits in `/starter-kits`:
 
@@ -101,9 +134,9 @@ The app includes runnable starter kits in `/starter-kits`:
 4. `document-qa-offline`
 5. `ai-automation-workflow`
 
-Each mission is designed for beginners and produces evidence that can be added to GitHub.
+Mỗi mission được thiết kế cho người mới, có output cụ thể để người học đưa vào GitHub làm bằng chứng.
 
-### Evidence Vault
+### Evidence Vault / Kho bằng chứng năng lực
 
 Learners can save:
 
@@ -115,11 +148,11 @@ Learners can save:
 - interview answers
 - project notes
 
-### Capstone 2.0
+### Capstone 2.0 / Project cuối khóa
 
 **AI Career Capstone: Document Q&A Assistant**
 
-A final project that simulates a RAG-style Document Q&A workflow offline:
+Final project mô phỏng quy trình RAG-style Document Q&A offline:
 
 ```text
 Local documents
@@ -131,14 +164,14 @@ Local documents
 → capstone report
 ```
 
-### Career Tools
+### Career Tools / Công cụ ứng tuyển
 
-- portfolio export pack
+- Portfolio export pack
 - CV project description
 - LinkedIn post template
-- mock interview defense
-- career reality check
-- production-thinking labs
+- Mock interview defense
+- Career reality check
+- Production-thinking labs
 - AI safety and trust module
 
 ---
@@ -159,7 +192,7 @@ Local documents
 
 ---
 
-## 5. Run locally
+## 5. Run locally / Chạy project local
 
 ```bash
 git clone https://github.com/Megatavn/skillforge-ai-bootcamp.git
@@ -199,7 +232,7 @@ android/app/build/outputs/apk/debug/app-debug.apk
 
 ---
 
-## 8. Test starter kits
+## 8. Test starter kits / Chạy thử bài tập code
 
 ```bash
 python starter-kits/ai-glossary-cli/ai_glossary.py
@@ -211,7 +244,7 @@ python starter-kits/ai-automation-workflow/automation_workflow.py
 
 ---
 
-## 9. Folder structure
+## 9. Folder structure / Cấu trúc thư mục
 
 ```text
 skillforge-ai-bootcamp/
@@ -269,7 +302,7 @@ Implemented runnable Python starter kits and an offline Document Q&A Assistant c
 
 ---
 
-## 12. What I learned
+## 12. What I learned / Những gì học được từ project
 
 - Designed an offline-first learning product for beginner AI Engineering learners.
 - Built a structured career-readiness system with lessons, code missions, evidence tracking and capstone evaluation.
@@ -279,7 +312,7 @@ Implemented runnable Python starter kits and an offline Document Q&A Assistant c
 
 ---
 
-## 13. Limitations
+## 13. Limitations / Giới hạn của MVP
 
 This MVP is intentionally offline-first:
 
@@ -288,9 +321,11 @@ This MVP is intentionally offline-first:
 - Capstone simulates RAG with keyword retrieval rather than embeddings/vector database.
 - Production ML/MLOps concepts are represented as curriculum and learning labs, not full production infrastructure.
 
+Bản MVP này cố tình giữ offline-first để dễ demo, dễ chạy, dễ đưa lên GitHub. Các phần AI thật, backend, cloud sync và embedding-based RAG có thể được thêm ở các phiên bản sau.
+
 ---
 
-## 14. Roadmap
+## 14. Roadmap / Hướng phát triển tiếp theo
 
 - [ ] Add optional AI tutor mode with user-provided API key
 - [ ] Add embedding-based RAG mode
