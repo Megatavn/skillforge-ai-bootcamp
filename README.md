@@ -52,6 +52,17 @@ It does **not** claim that a beginner becomes a Senior AI Engineer by only readi
 
 ---
 
+## Language Strategy
+
+SkillForge AI uses a two-layer language strategy:
+
+- **In-app experience:** Vietnamese-first UI for beginner learners, with important AI career terms kept bilingual where useful, such as RAG, Evidence Vault, Capstone and Code Missions.
+- **GitHub/CV presentation:** English-first documentation so the project looks professional in a portfolio and can be understood by recruiters or technical reviewers.
+
+This keeps the product accessible for Vietnamese beginners while keeping the repository portfolio-ready.
+
+---
+
 ## 2. Why this project is portfolio-worthy
 
 Most beginner AI apps stop at lessons and quizzes. SkillForge AI focuses on proof of skill:

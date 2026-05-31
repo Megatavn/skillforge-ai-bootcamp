@@ -94,3 +94,8 @@ Pin the repository on your GitHub profile because it shows:
 - AI education design
 - portfolio/career workflow
 - capstone and evidence system
+
+
+## Language note
+
+Keep the app UI Vietnamese-first for the target user group. Keep README/CV materials English-first for portfolio use. This is intentional and should be mentioned when presenting the project.

@@ -46,3 +46,8 @@ I built SkillForge AI because many beginner AI learning apps stop at short lesso
 - Add cloud sync and account system.
 - Add project submission review workflow.
 - Add GitHub integration.
+
+
+## Language/Product Positioning
+
+The app uses Vietnamese-first learning UX for beginner accessibility while keeping GitHub documentation and CV descriptions in English for portfolio presentation. Key technical terms remain bilingual when useful so learners can understand concepts in Vietnamese and still recognize industry vocabulary.
