@@ -1,6 +1,25 @@
-node_modules
-dist
-android
-.DS_Store
-.env
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+build/
+
+# Android/Capacitor generated build artifacts
+android/.gradle/
+android/app/build/
+android/build/
+android/capacitor-cordova-android-plugins/build/
+
+# Local Android SDK config
+android/local.properties
+
+# Release artifacts
 *.apk
+*.aab
+*.zip
+
+# Environment / OS
+.env
+.env.local
+.DS_Store
